@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RecentRoutingModule } from './recent-routing.module';
 import { RecentComponent } from './recent/recent.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { RecentComponent } from './recent/recent.component';
   ],
   imports: [
     CommonModule,
-    RecentRoutingModule
+    RecentRoutingModule,
+    SharedModule
   ]
 })
 export class RecentModule { }

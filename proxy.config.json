@@ -1,0 +1,8 @@
+{
+  "/history/*": {
+    "target": "https://api.deezer.com/",
+    "secure": true,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
