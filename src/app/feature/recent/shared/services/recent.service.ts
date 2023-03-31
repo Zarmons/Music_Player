@@ -7,12 +7,13 @@ import { environment } from 'src/environments/environment.development';
 })
 export class RecentService {
 
+  token = "frkegmvVpBH1KpJ132k881nCfsOf81qdMqie3dzxwL6UuWEn1n1";
   httpOptions = { headers: new HttpHeaders({}) };
   readonly url = environment.url;
 
   constructor(private http: HttpClient) { }
 
   getUserHistory() {
-    return this.http.get('https://api.deezer.com/user/me/history', this.httpOptions);
+    return this.http.get(this.url+'/user/me?access_token='+this.token, this.httpOptions);
   }
 }
